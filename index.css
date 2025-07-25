@@ -19,6 +19,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
-    font-size: large;
+    font-size: 30px;
+    position: relative;
+}
+#learnChessBtn{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    bottom: 130px;
+    left: 330px;
+    background-color: #0A1F1A;
+    border: 3px solid #0A1F1A;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s;
+}
+#learnChessBtn:hover{
+    background-color: #00960C;
+    border: 3px solid #0A1F1A;
 }
