@@ -5,5 +5,99 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    background-color: grey;
+}
+#topic{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 10px;
+}
+#players{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.cards{
+    width: 400px;
+    height: 650px;
+    border: 5px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 12px;
+}
+.photo{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.magnusPhoto{
+    background-image: url("../images/magnus.jpeg");
+}
+.hikaruPhoto{
+    background-image: url("../images/hikaru.jpeg");
+}
+.fabianoPhoto{
+    background-image: url("../images/fabiano.jpeg");
+}
+.praggnanandhaaPhoto{
+    background-image: url("../images/pragnanandha.jpeg");
+}
+.arjunPhoto{
+    background-image: url("../images/arjun.jpeg");
+}
+.gukeshPhoto{
+    background-image: url("../images/gukesh.jpeg");
+}
+.nodirbekPhoto{
+    background-image: url("../images/nodirbek.jpeg");
+}
+.alirezaPhoto{
+    background-image: url("../images/alireza.jpeg");
+}
+.weiPhoto{
+    background-image: url("../images/wei.jpeg");
+}
+.anishPhoto{
+    background-image: url("../images/anish.jpeg");
+}
+.sexriyarPhoto{
+    background-image: url("../images/shackriyar.jpeg");
+}
+.wesleyPhoto{
+    background-image: url("../images/wesley.jpeg");
+}
+#nodirbekName{
+    font-size: 35px;
+}
+.flag{
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+}
+.fideBtn{
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.fideBtn:hover{
+    background-color: rgb(0, 165, 0);
 }
