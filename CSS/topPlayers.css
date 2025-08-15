@@ -25,7 +25,7 @@ body{
     gap: 30px;
 }
 .cards{
-    width: 400px;
+    width: 480px;
     height: 650px;
     border: 5px solid black;
     margin-top: 20px;
@@ -85,7 +85,9 @@ body{
 .flag{
     width: 100px;
     height: 50px;
-    margin-right: 10px;
+}
+.no11 > h1{
+    white-space: nowrap;
 }
 .fideBtn{
     width: 200px;
