@@ -7,6 +7,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
 }
+h1{
+    cursor: default;
+}
 #topic{
     width: 100%;
     height: 50px;
@@ -78,9 +81,6 @@ body{
 }
 .wesleyPhoto{
     background-image: url("../images/wesley.jpeg");
-}
-#nodirbekName{
-    font-size: 35px;
 }
 .flag{
     width: 100px;
