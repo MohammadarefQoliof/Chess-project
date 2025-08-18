@@ -6,20 +6,27 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
-#main{
-    width: 100%;
+.main{
+    width: 50%;
     height: 100vh;
-    background-image: url("../images/chessComImage.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 550px;
 }
 .chessCom{
+    background-image: url("../images/chessComImage.webp");
+}
+.lichess{
+    background-image: url("../images/lichess.png");
+    background-position: left;
+}
+.buttons{
     width: 250px;
     height: 75px;
     position: relative;
@@ -35,9 +42,18 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-.chessCom:hover{
+.chessComBtn:hover{
     background-color: rgb(0, 165, 0);
     border: 2px solid rgb(0, 165, 0);
+}
+.lichessBtn{
+    background-color: grey;
+    border: 2px solid grey;
+}
+.lichessBtn:hover{
+    color: black;
+    background-color: rgb(177, 177, 177);
+    border: 2px solid rgb(177, 177, 177);
 }
 
 
