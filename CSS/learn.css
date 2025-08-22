@@ -9,7 +9,7 @@ body{
 #list > ul > li{
     list-style-type: none;
     font-size: 30px;
-    margin: 35px;
+    margin: 25px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -21,8 +21,85 @@ body{
     justify-content: center;
     gap: 60px;
 }
+.sections{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec1{
+    height: 1000px;
+}
+.sec2{
+    height: 1500px;
+}
+.chessImages{
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.openingTexts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.kingMove{
+    background-image: url("../images/kingMoveChess.png");
+}
+.queenMove{
+    background-image: url("../images/queenMove.png");
+}
+.rookMove{
+    background-image: url("../images/rookMove.png");
+}
+.knightMove{
+    background-image: url("../images/knightMove.png");
+}
+.bishopMove{
+    background-image: url("../images/bishopMove.png");
+}
+.pawnMove{
+    background-image: url("../images/pawnMove.png");
+}
+.italianGame{
+    background-image: url("../images/italianGame.png");
+}
+.queensGambit{
+    background-image: url("../images/queensGambit.png");
+}
+.spanishOpening{
+    background-image: url("../images/spanishOpening.png");
+}
+.londonOpening{
+    background-image: url("../images/londonOpening.png");
+}
+.sicilianDefense{
+    background-image: url("../images/sicilianDefense.png");
+}
+.frenchDefense{
+    background-image: url("../images/frenchDefense.png");
+}
+.caroDefense{
+    background-image: url("../images/caroDefense.png");
+}
+.indianDefense{
+    background-image: url("../images/indianDefense.png");
+}
+.slavDefense{
+    background-image: url("../images/slavDefense.png");
+}
 
 
+
+.hide{
+    display: none;
+}
 
 
 
