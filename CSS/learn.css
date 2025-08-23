@@ -32,6 +32,9 @@ body{
     height: 1000px;
 }
 .sec2{
+    height: 1100px;
+}
+.sec3{
     height: 1500px;
 }
 .chessImages{
@@ -106,7 +109,15 @@ body{
 .pawnPromotion{
     background-image: url("../images/pawnPromotion.png");
 }
-
+.check{
+    background-image: url("../images/checkPosition.png");
+}
+.checkmate{
+    background-image: url("../images/checkmate.png");
+}
+.stalemate{
+    background-image: url("../images/stalemate.png");
+}
 
 
 .hide{
