@@ -32,7 +32,7 @@ body{
     height: 1000px;
 }
 .sec2{
-    height: 1100px;
+    height: 1150px;
 }
 .sec3{
     height: 1500px;
@@ -54,6 +54,8 @@ body{
 }
 .explanationText{
     width: 400px;
+    height: 100px;
+    margin-top: 10px;
 }
 .kingMove{
     background-image: url("../images/kingMoveChess.png");
@@ -117,6 +119,21 @@ body{
 }
 .stalemate{
     background-image: url("../images/stalemate.png");
+}
+.repetition{
+    background-image: url("../images/repetition.png");
+}
+.pin{
+    background-image: url("../images/pin.png");
+}
+.skewer{
+    background-image: url("../images/skewer.png");
+}
+.fork{
+    background-image: url("../images/fork.png");
+}
+.discoverAttack{
+    background-image: url("../images/discoverAttack.png");
 }
 
 
