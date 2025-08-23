@@ -43,11 +43,14 @@ body{
     display: flex;
     justify-content: center;
 }
-.openingTexts{
+.texts{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 20px 0;
+}
+.explanationText{
+    width: 400px;
 }
 .kingMove{
     background-image: url("../images/kingMoveChess.png");
@@ -93,6 +96,15 @@ body{
 }
 .slavDefense{
     background-image: url("../images/slavDefense.png");
+}
+.castle{
+    background-image: url("../images/castling.png");
+}
+.enPassant{
+    background-image: url("../images/enPassant.png");
+}
+.pawnPromotion{
+    background-image: url("../images/pawnPromotion.png");
 }
 
 
