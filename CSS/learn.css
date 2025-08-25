@@ -135,6 +135,21 @@ body{
 .discoverAttack{
     background-image: url("../images/discoverAttack.png");
 }
+.doubleCheck{
+    background-image: url("#");
+}
+.deflection{
+    background-image: url("#");
+}
+.zwischenzug{
+    background-image: url("#");
+}
+.overloading{
+    background-image: url("#");
+}
+.backRank{
+    background-image: url("#");
+}
 
 
 .hide{
