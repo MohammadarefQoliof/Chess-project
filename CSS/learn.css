@@ -136,19 +136,19 @@ body{
     background-image: url("../images/discoverAttack.png");
 }
 .doubleCheck{
-    background-image: url("#");
+    background-image: url("../images/doubleCheck.png")
 }
 .deflection{
-    background-image: url("#");
+    background-image: url("../images/deflection.png");
 }
 .zwischenzug{
-    background-image: url("#");
+    background-image: url("../images/zwischenzug.png");
 }
 .overloading{
-    background-image: url("#");
+    background-image: url("../images/overloading.png");
 }
 .backRank{
-    background-image: url("#");
+    background-image: url("../images/backRank.png");
 }
 
 
