@@ -16,6 +16,7 @@ let listOfPlayers = [no1, no2, no3, no4, no5, no6, no7, no8, no9, no10, no11, no
 let previousBtn = document.querySelector("#previous")
 let nextBtn = document.querySelector("#next")
 let num = 1
+no1.querySelector("a").style.zIndex = "1"
 
 function changeCards(flag){
     listOfPlayers.forEach(i  => {
@@ -50,6 +51,7 @@ function changeCards(flag){
         let classNamesOfCards = i.className.split(" ")[0]
         if (classNamesOfCards.slice(2) == num){
             i.style.opacity = "1"
+            i.querySelector("a").style.zIndex = "1"
         }
         if (flag){
             i.classList.add("animateNext")

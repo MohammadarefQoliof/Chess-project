@@ -46,6 +46,7 @@ h1{
     flex-direction: column;
     font-size: 20px;
     position: absolute;
+    transition: all 0s ease;
     gap: 12px;
 }
 .photo{
@@ -118,6 +119,11 @@ h1{
     position: absolute;
     top: 400px;
     left: 300px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 #next{
     width: 100px;
@@ -125,6 +131,11 @@ h1{
     position: absolute;
     top: 400px;
     right: 300px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 .no1{
     opacity: 1;
@@ -162,26 +173,38 @@ h1{
 .no12{
     opacity: 0;
 }
-.animatePrevious{
+/* .animatePrevious{
     animation: previous 1s ease-out;
+    transform: scale(0.5);
+    transition: all 0.5s ease;
+} */
+.animateNext {
+    animation: slideNext 1s forwards;
 }
-.animateNext{
-    animation: next 1s ease-out;
+@keyframes slideNext {
+    0%{
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
-@keyframes previous {
-    50%{
-        transform: translateX(-242.5px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+
+.animatePrevious {
+    animation: slidePrevious 1s forwards;
 }
-@keyframes next {
-    50%{
-        transform: translateX(242.5px);
+@keyframes slidePrevious {
+    0%{
+        transform: scale(0);
     }
-    100%{
-        transform: translateX(0);
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
