@@ -20,7 +20,7 @@ let puzzles = [
     photo2: "../images/puzzle3page2.png",
     photo3: "../images/puzzle3page3.png",
     photo4: "../images/puzzle3page4.png",
-    answer1: "ng6",
+    answer1: "ng6+",
     answer2: "nxf8",
 },
 {
@@ -66,7 +66,6 @@ let checkBtn = document.getElementById("checkBtn")
 
 image.style.backgroundImage = `url(${puzzle.photo1})`
 let flag = true
-
 
 checkBtn.addEventListener("click", ()=>{
     let answer = input.value.toLowerCase()
