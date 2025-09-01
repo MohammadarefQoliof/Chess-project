@@ -8,10 +8,12 @@ body{
     font-family: "Comfortaa", sans-serif;
     height: 100vh;
 }
+h1{
+    cursor: default;
+}
 #main{
     width: 100%;
     height: 100vh;
-    /* background-color: black; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -21,24 +23,30 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background-color: black; */
 }
 #dailyPuzzle > h1{
     margin-top: 20px;
 }
-#answer{
+.answer{
     width: 400px;
     height: 50px;
     font-size: 30px;
     margin: 40px auto;
 }
-#checkBtn{
+.checkBtn{
     width: 100px;
     height: 50px;
     position: relative;
     top: -6px;
+    color: white;
+    background-color: rgb(47, 136, 47);
+    border: 2px solid rgb(66, 153, 66);
 }
-#image{
+.checkBtn:hover{
+    background-color: green;
+    border: 2px solid green;
+}
+.image{
     width: 500px;
     height: 500px;
     margin-top: 50px;
@@ -54,8 +62,44 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: black; */
 }
 #otherPuzzles > h1{
     margin: 40px auto;
+}
+#otherPuzzles > h1{
+    cursor: pointer;
+}
+.wrongAnswer{
+    border: 3px solid red;
+    background-color: rgb(234, 124, 124);
+}
+.allRight{
+    border: 3px solid green;
+    background-color: rgb(0, 183, 43);
+}
+.hide{
+    display: none;
+}
+#range{
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+}
+.rangeLabel{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+}
+#mates1{
+    margin-top: 50px;
+}
+#submit{
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    font-size: 20px;
 }
