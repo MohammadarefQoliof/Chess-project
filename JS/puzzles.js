@@ -97,128 +97,69 @@ checkBtn.addEventListener("click", ()=>{
         }
     }
 });
-otherPuzzles.children[0].addEventListener("click", ()=>{
-    let otherPuzzlesChildren = [...otherPuzzles.children]
-    let variants = [...document.querySelectorAll(".hide")]
-    
-    otherPuzzlesChildren.forEach(i => {
-        i.classList.add("hide")
-    })
-    variants.forEach(e =>{
-        e.classList.remove("hide")
-    })
-    let submitBtn = document.querySelector("#submit")
-    mateImage.style.backgroundImage = "url('')"
-    submitBtn.addEventListener("click", ()=>{
-        let selected = document.querySelector("#range").value
-        console.log(selected);
+let submitBtn = document.querySelector("#submit")
+submitBtn.addEventListener("click", ()=>{
+    let selected = document.querySelector("#range").value
+    let answerOfMateIn1 = document.querySelector(".mateAnswer")
+    let mateCheckBtn = document.querySelector(".mateCheckBtn")
+    answerOfMateIn1.classList.remove("allRight")
+    answerOfMateIn1.classList.remove("wrongAnswer")
+    answerOfMateIn1.value = ""
         
-        if (selected == "200-400"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "400-600"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "600-800"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "800-1000"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1000-1200"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1200-1400"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1400-1600"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1600-1800"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1800-2000"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "2000-2200"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "2200+"){
-            mateImage.style.backgroundImage = "url('')"
-        }
-        
-    })
-})
-otherPuzzles.children[1].addEventListener("click", ()=>{
-    let otherPuzzlesChildren = [...otherPuzzles.children]
-    let variants = [...document.querySelectorAll(".hide")]
-    
-    otherPuzzlesChildren.forEach(i => {
-        i.classList.add("hide")
-    })
-    variants.forEach(e =>{
-        e.classList.remove("hide")
-    })
-    let submitBtn = document.querySelector("#submit")
-    mateImage.style.backgroundImage = "url('')"
-    submitBtn.addEventListener("click", ()=>{
-        let selected = document.querySelector("#range").value
-        console.log(selected);
-        
-        if (selected == "200-400"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "400-600"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "600-800"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "800-1000"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1000-1200"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1200-1400"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1400-1600"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1600-1800"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1800-2000"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "2000-2200"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "2200+"){
-            mateImage.style.backgroundImage = "url('')"
-        }
-        
-    })
-})
-otherPuzzles.children[2].addEventListener("click", ()=>{
-    let otherPuzzlesChildren = [...otherPuzzles.children]
-    let variants = [...document.querySelectorAll(".hide")]
-    
-    otherPuzzlesChildren.forEach(i => {
-        i.classList.add("hide")
-    })
-    variants.forEach(e =>{
-        e.classList.remove("hide")
-    })
-    let submitBtn = document.querySelector("#submit")
-    mateImage.style.backgroundImage = "url('')"
-    submitBtn.addEventListener("click", ()=>{
-        let selected = document.querySelector("#range").value
-        
-        if (selected == "200-400"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "400-600"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "600-800"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "800-1000"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1000-1200"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1200-1400"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1400-1600"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1600-1800"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "1800-2000"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "2000-2200"){
-            mateImage.style.backgroundImage = "url('')"
-        }else if (selected == "2200+"){
-            mateImage.style.backgroundImage = "url('')"
-        }
-        
-    })
+    if (selected == "200-400"){
+        mateImage.style.backgroundImage = "url('../images/mate in 1 200-400.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "qxh7"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 200-400 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
+    }else if (selected == "400-600"){
+        mateImage.style.backgroundImage = "url('../images/mate in 1 400-600.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "qc8"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 400-600 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
+    }else if (selected == "600-800"){
+        mateImage.style.backgroundImage = "url('../images/mate in 1 600-800.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == ""){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 600-800 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
+    }else if (selected == "800-1000"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "1000-1200"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "1200-1400"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "1400-1600"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "1600-1800"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "1800-2000"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "2000-2200"){
+        mateImage.style.backgroundImage = "url('')"
+    }else if (selected == "2200+"){
+        mateImage.style.backgroundImage = "url('')"
+    }
 })

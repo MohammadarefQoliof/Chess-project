@@ -19,11 +19,8 @@
             </div>
         </div>
         <div id="otherPuzzles">
-            <h1>Mate in 1</h1>
-            <h1>Mate in 2</h1>
-            <h1>Mate in 3</h1>
-            <label for="range" class="hide rangeLabel">Choose a rating range:</label>
-            <select id="range" class="hide">
+            <select id="range">
+                <option disabled selected>Choose a rating range</option>
                 <option value="200-400">200–400</option>
                 <option value="400-600">400–600</option>
                 <option value="600-800">600–800</option>
@@ -36,12 +33,12 @@
                 <option value="2000-2200">2000–2200</option>
                 <option value="2200+">2200+</option>
             </select>
-            <button id="submit" class="hide">SUBMIT</button>
-            <div id="mates1" class="hide">
+            <button id="submit">SUBMIT</button>
+            <div id="mates1">
                 <div class="image mateImage"></div>
                 <div>
-                        <input type="text" name="answer" autocomplete="off" class="answer">
-                        <button class="checkBtn">CHECK MOVE</button>
+                        <input type="text" name="answer" autocomplete="off" class="answer mateAnswer">
+                        <button class="checkBtn mateCheckBtn">CHECK MOVE</button>
                     </div>
                 </div>
             </div>
