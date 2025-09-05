@@ -71,9 +71,6 @@ h1{
     border: 3px solid green;
     background-color: rgb(0, 183, 43);
 }
-.hide{
-    display: none;
-}
 #range{
     width: 300px;
     height: 40px;

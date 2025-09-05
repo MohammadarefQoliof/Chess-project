@@ -52,6 +52,9 @@ body{
     align-items: center;
     transition: 1s;
 }
+#topListPhone{
+    display: none;
+}
 h1{
     font-size: 70px;
     font-weight: bold;
@@ -66,6 +69,7 @@ h1{
     cursor: default;
 }
 
+
 @keyframes typing {
     from { width: 0; }
     to   { width: 22ch; }
@@ -75,7 +79,39 @@ h1{
     50% { border-color: transparent; }
 }
   
-/*
-@media (min-width: 769px) and (max-width: 1024px) {
-
-} */
+@media (min-width: 400px) and (max-width: 768px) {
+    #topList{
+        display: none;
+    }
+    #topListPhone{
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        font-size: 30px;
+        margin: 20px;
+        display: block;
+    }
+    .tabs{
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 15px 0 0 10px;
+    }
+    .buttonsPhone{
+        font-family: "Comfortaa", sans-serif;
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        gap: 5;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .hide{
+        display: none;
+    }
+}

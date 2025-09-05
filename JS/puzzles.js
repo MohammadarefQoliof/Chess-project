@@ -98,6 +98,7 @@ checkBtn.addEventListener("click", ()=>{
     }
 });
 let submitBtn = document.querySelector("#submit")
+mateImage.style.backgroundImage = "none"
 submitBtn.addEventListener("click", ()=>{
     let selected = document.querySelector("#range").value
     let answerOfMateIn1 = document.querySelector(".mateAnswer")
@@ -136,7 +137,7 @@ submitBtn.addEventListener("click", ()=>{
         mateImage.style.backgroundImage = "url('../images/mate in 1 600-800.png')"
         mateCheckBtn.addEventListener("click", ()=>{
             let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
-            if (mateAnswer == ""){
+            if (mateAnswer == "ra1"){
                 mateImage.style.backgroundImage = "url('../images/mate in 1 600-800 page2.png')"
                 answerOfMateIn1.classList.remove("wrongAnswer")
                 answerOfMateIn1.classList.add("allRight")
@@ -146,20 +147,95 @@ submitBtn.addEventListener("click", ()=>{
             }
         })
     }else if (selected == "800-1000"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 800-1000.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "qb3"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 800-1000 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }else if (selected == "1000-1200"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 1000-1200.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "bc5"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 1000-1200 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }else if (selected == "1200-1400"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 1200-1400.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "qf5"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 1200-1400 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }else if (selected == "1400-1600"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 1400-1600.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "qxf8"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 1400-1600 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }else if (selected == "1600-1800"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 1600-1800.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "qe3"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 1600-1800 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }else if (selected == "1800-2000"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 1800-2000.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "b4"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 1800-2000 page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }else if (selected == "2000-2200"){
-        mateImage.style.backgroundImage = "url('')"
-    }else if (selected == "2200+"){
-        mateImage.style.backgroundImage = "url('')"
+        mateImage.style.backgroundImage = "url('../images/mate in 1 2000+.png')"
+        mateCheckBtn.addEventListener("click", ()=>{
+            let mateAnswer = answerOfMateIn1.value.toLowerCase().replaceAll(" ", "")
+            if (mateAnswer == "nd5"){
+                mateImage.style.backgroundImage = "url('../images/mate in 1 2000+ page2.png')"
+                answerOfMateIn1.classList.remove("wrongAnswer")
+                answerOfMateIn1.classList.add("allRight")
+            }else{
+                answerOfMateIn1.classList.remove("allRight")
+                answerOfMateIn1.classList.add("wrongAnswer")
+            }
+        })
     }
 })
