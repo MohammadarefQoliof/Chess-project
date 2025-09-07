@@ -19,6 +19,7 @@ li[0].addEventListener("click", ()=>{
     rules.classList.add("hide")
     openings.classList.add("hide")
     tactics.classList.add("hide")
+    if (window.innerWidth >= 640 && window.innerWidth <= 1024)
     sec1.style.height = "1200px"
 })
 li[1].addEventListener("click", ()=>{
