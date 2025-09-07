@@ -24,18 +24,14 @@ body{
     font-family: "Comfortaa", sans-serif;
     width: 600px;
     height: 100%;
-    /* font-size: 30px; */
-    font-size: calc(100vw / 40);
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     color: white;
-    /* transition: 0.1s; */
     cursor: pointer;
     text-decoration: none;
-    /* background: rgba(20, 20, 20, 0.2); */
-    /* backdrop-filter: blur(8px); */
 }
 .buttons:hover{
     background: rgba(20, 20, 20, 0.2);
@@ -80,6 +76,6 @@ h1{
     50% { border-color: transparent; }
 }
   
-/* @media screen and (min-width: 360px) and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 
 } */
