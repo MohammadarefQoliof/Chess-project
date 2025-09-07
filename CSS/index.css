@@ -80,8 +80,6 @@ h1{
     50% { border-color: transparent; }
 }
   
-@media screen and (min-width: 360px) and (max-width: 768px) {
-    .buttons{
-        
-    }
-}
+/* @media screen and (min-width: 360px) and (max-width: 768px) {
+
+} */
