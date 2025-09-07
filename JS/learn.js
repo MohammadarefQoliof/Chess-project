@@ -7,16 +7,19 @@ li.map((a) =>{
         a.style.color = "orange"
     })
 })
-
+let sec1 = document.querySelector(".sec1")
 let moves = document.querySelector(".moves")
 let rules = document.querySelector(".rules")
 let openings = document.querySelector(".openings")
 let tactics = document.querySelector(".tactics")
+console.log(sec1);
+
 li[0].addEventListener("click", ()=>{
     moves.classList.remove("hide")
     rules.classList.add("hide")
     openings.classList.add("hide")
     tactics.classList.add("hide")
+    sec1.style.height = "1200px"
 })
 li[1].addEventListener("click", ()=>{
     moves.classList.add("hide")
