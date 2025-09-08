@@ -16,6 +16,8 @@ h1{
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #dailyPuzzle{
     width: 50%;
@@ -61,7 +63,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .wrongAnswer{
     border: 3px solid red;
@@ -88,4 +89,66 @@ h1{
     top: 30px;
     right: 120px;
     font-size: 20px;
+}
+.brVisible > br{
+    display: none;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #main{
+        width: 100%;
+        height: calc(100vw / 0.4);
+    }
+    #dailyPuzzle{
+        width: 100%;
+        height: 50%;
+    }
+    #dailyPuzzle > h1{
+        font-size: calc(100vw / 20);
+    }
+    .image{
+        width: calc(100vw / 1.5);
+        height: calc(100vw / 1.5);
+        margin-top: 20px;
+    }
+    #range, #submit{
+        position: relative;
+    }
+    #range{
+        position: relative;
+        width: calc(100vw / 1.5);
+    }
+    #submit{
+        position: relative;
+        top: 20px;
+        right: 0;
+        margin: 20px auto;
+    }
+    #mates1{
+        margin: 0;
+    }
+    .brVisible > br{
+        display: inline;
+        opacity: 1;
+    }
+
+    .answer{
+        width: calc(100vw / 1.5);
+        height: 35px;
+        font-size: 25px;
+        margin: 20px auto;
+    }
+
+
+
+    #otherPuzzles{
+        width: 100%;
+        height: 50%;
+        /* background-color: grey; */
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
 }
