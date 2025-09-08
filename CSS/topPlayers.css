@@ -150,7 +150,7 @@ h1{
 
 @media screen and (max-width: 768px) {
     #main > h1{
-        font-size: calc(100vw / 20);
+        font-size: 30px;
     }
     .card{
         width: 380px;
@@ -158,7 +158,7 @@ h1{
         top: 40px;
     }
     .cards{
-        height: 110vh;
+        height: 105vh;
     }
     .card > h1{
         font-size: 30px;
@@ -184,7 +184,7 @@ h1{
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #main > h1{
-        font-size: calc(100vw / 17);
+        font-size: 40px;
     }
     .card{
         width: 430px;
