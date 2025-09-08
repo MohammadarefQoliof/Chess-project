@@ -95,7 +95,7 @@ h1{
     opacity: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #main{
         width: 100%;
         height: calc(100vw / 0.4);
@@ -145,10 +145,6 @@ h1{
     #otherPuzzles{
         width: 100%;
         height: 50%;
-        /* background-color: grey; */
         flex-direction: column;
     }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    
 }
