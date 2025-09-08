@@ -20,14 +20,6 @@ h1{
     font-size: 30px;
     margin: 10px;
 }
-/* #players{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-} */
 .cards{
     width: 100%;
     height: 100vh;
@@ -96,9 +88,6 @@ h1{
     width: 100px;
     height: 50px;
 }
-.no11 > h1{
-    white-space: nowrap;
-}
 .fideBtn{
     width: 200px;
     height: 50px;
@@ -140,48 +129,13 @@ h1{
 .no1{
     opacity: 1;
 }
-.no2{
+.no2, .no3, .no4, .no5, .no6, .no7, .no8, .no9, .no10, .no11, .no12{
     opacity: 0;
 }
-.no3{
-    opacity: 0;
+.animate{
+    animation: slide 1s forwards;
 }
-.no4{
-    opacity: 0;
-}
-.no5{
-    opacity: 0;
-}
-.no6{
-    opacity: 0;
-}
-.no7{
-    opacity: 0;
-}
-.no8{
-    opacity: 0;
-}
-.no9{
-    opacity: 0;
-}
-.no10{
-    opacity: 0;
-}
-.no11{
-    opacity: 0;
-}
-.no12{
-    opacity: 0;
-}
-/* .animatePrevious{
-    animation: previous 1s ease-out;
-    transform: scale(0.5);
-    transition: all 0.5s ease;
-} */
-.animateNext {
-    animation: slideNext 1s forwards;
-}
-@keyframes slideNext {
+@keyframes slide {
     0%{
         transform: scale(0);
     }
@@ -193,24 +147,62 @@ h1{
     }
 }
 
-.animatePrevious {
-    animation: slidePrevious 1s forwards;
-}
-@keyframes slidePrevious {
-    0%{
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
-/* @media (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
+    #main > h1{
+        font-size: calc(100vw / 20);
+    }
+    .card{
+        width: 380px;
+        height: 550px;
+        top: 40px;
+    }
+    .cards{
+        height: 110vh;
+    }
+    .card > h1{
+        font-size: 30px;
+    }
+    #previous{
+        width: 75px;
+        height: 75px;
+        font-size: 40px;
+        top: auto;
+        left: auto;
+        bottom: 30px;
+        left: 90px;
+    }
+    #next{
+        width: 75px;
+        height: 75px;
+        font-size: 40px;
+        top: auto;
+        left: auto;
+        bottom: 30px;
+        right: 90px;
+    }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-
-} */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #main > h1{
+        font-size: calc(100vw / 17);
+    }
+    .card{
+        width: 430px;
+        height: 600px;
+        top: 60px;
+    }
+    #previous{
+        width: 85px;
+        height: 85px;
+        font-size: 42px;
+        left: 80px;
+        top: 350px;
+    }
+    #next{
+        width: 85px;
+        height: 85px;
+        font-size: 42px;
+        right: 80px;
+        top: 350px;
+    }
+}

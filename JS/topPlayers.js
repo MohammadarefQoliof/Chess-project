@@ -24,14 +24,14 @@ function changeCards(flag){
         if (classNamesOfCards.slice(2) == num){
             i.style.opacity = "0"
             if (flag){
-                i.classList.add("animateNext")
+                i.classList.add("animate")
                 setTimeout(() => {
-                    i.classList.remove("animateNext")
+                    i.classList.remove("animate")
                 }, 1000);
             }else{
-                i.classList.toggle("animatePrevious")
+                i.classList.toggle("animate")
                 setTimeout(() => {
-                    i.classList.remove("animatePrevious")
+                    i.classList.remove("animate")
                 }, 1000);
             }
         }
@@ -54,14 +54,14 @@ function changeCards(flag){
             i.querySelector("a").style.zIndex = "1"
         }
         if (flag){
-            i.classList.add("animateNext")
+            i.classList.add("animate")
             setTimeout(() => {
-                i.classList.remove("animateNext")
+                i.classList.remove("animate")
             }, 1000);
         }else{
-            i.classList.toggle("animatePrevious")
+            i.classList.toggle("animate")
             setTimeout(() => {
-                i.classList.remove("animatePrevious")
+                i.classList.remove("animate")
             }, 1000);
         }
     })
