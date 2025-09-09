@@ -4,7 +4,7 @@ let puzzles = [
     photo2: "../images/puzzle1page2.png",
     photo3: "../images/puzzle1page3.png",
     photo4: "../images/puzzle1page4.png",
-    answer1: "qe4+",
+    answer1: "qe4+ qe4",
     answer2: "qxa8"
 },
 {
@@ -12,7 +12,7 @@ let puzzles = [
     photo2: "../images/puzzle2page2.png",
     photo3: "../images/puzzle2page3.png",
     photo4: "../images/puzzle2page4.png",
-    answer1: "e5+",
+    answer1: "e5+ e5",
     answer2: "exf6",
 },
 {
@@ -20,7 +20,7 @@ let puzzles = [
     photo2: "../images/puzzle3page2.png",
     photo3: "../images/puzzle3page3.png",
     photo4: "../images/puzzle3page4.png",
-    answer1: "ng6+",
+    answer1: "ng6+ ng6",
     answer2: "nxf8",
 },
 {
@@ -28,7 +28,7 @@ let puzzles = [
     photo2: "../images/puzzle4page2.png",
     photo3: "../images/puzzle4page3.png",
     photo4: "../images/puzzle4page4.png",
-    answer1: "nf6+",
+    answer1: "nf6+ nf6",
     answer2: "qxd8"
 },
 {
@@ -36,7 +36,7 @@ let puzzles = [
     photo2: "../images/puzzle5page2.png",
     photo3: "../images/puzzle5page3.png",
     photo4: "../images/puzzle5page4.png",
-    answer1: "rd8",
+    answer1: "rd8 rd8",
     answer2: "qxe6"
 },
 {
@@ -44,7 +44,7 @@ let puzzles = [
     photo2: "../images/puzzle6page2.png",
     photo3: "../images/puzzle6page3.png",
     photo4: "../images/puzzle6page4.png",
-    answer1: "ne7+",
+    answer1: "ne7+ ne7",
     answer2: "nxg6"
 },
 {
@@ -52,7 +52,7 @@ let puzzles = [
     photo2: "../images/puzzle7page2.png",
     photo3: "../images/puzzle7page3.png",
     photo4: "../images/puzzle7page4.png",
-    answer1: "ne6+",
+    answer1: "ne6+ ne6",
     answer2: "nxc5"
 },
 ]
@@ -76,7 +76,7 @@ input.classList.remove("allRight")
 checkBtn.addEventListener("click", ()=>{
     let answer = input.value.toLowerCase().replaceAll(" ", "")
     if (flag){
-        if (answer == puzzle.answer1){
+        if (answer == puzzle.answer1.split(" ")[0] || answer == puzzle.answer1.split(" ")[1]){
             setTimeout(() => {
                 image.style.backgroundImage = `url(${puzzle.photo3})`
             }, 2000);

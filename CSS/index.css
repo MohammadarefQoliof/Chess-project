@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: "Comfortaa", sans-serif;
     height: 100vh;
 }
 #topList{
@@ -21,7 +22,6 @@ body{
     backdrop-filter: blur(8px);
 }
 .buttons{
-    font-family: "Comfortaa", sans-serif;
     width: 600px;
     height: 100%;
     font-size: 30px;
@@ -65,17 +65,71 @@ h1{
     animation: typing 1.2s steps(18, end) forwards, blink 0.7s step-end infinite;
     cursor: default;
 }
-
+.hide{
+    display: none;
+}
+.animateRight{
+    animation: screenAppear 0.5s forwards;
+}
+.animateLeft{
+    animation: screenDisappear 0.5s forwards;
+}
+@keyframes screenDisappear{
+    from{
+        left: -30px;
+    }
+    to{
+        left: -420px;
+    }
+}
+@keyframes screenAppear{
+    from{
+        left: -420px;
+    }
+    to{
+        left: -30px;
+    }
+}
 
 @keyframes typing {
-    from { width: 0; }
-    to   { width: 22ch; }
+    from{
+        width: 0;
+    }
+    to{
+        width: 22ch;
+    }
 }
   
 @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+        border-color: transparent;
+    }
 }
   
-/* @media screen and (max-width: 768px) {
-
-} */
+@media screen and (min-width: 370px) and (max-width: 768px) {
+    #topList{
+        display: none;
+    }
+    #topListPhone{
+        position: absolute;
+        display: block;
+        font-size: 40px;
+        margin: 20px;
+    }
+    .tabs{
+        width: 380px;
+        height: 586px;
+        position: absolute;
+        left: -420px;
+        background: rgba(20, 20, 20, 0.2);
+        backdrop-filter: blur(8px);
+        display: flex;
+        flex-direction: column;
+    }
+    .buttonsPhone{
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+        font-size: calc(100vw / 19);
+    }
+}
