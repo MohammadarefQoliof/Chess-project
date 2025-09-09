@@ -118,7 +118,7 @@ h1{
     }
     .tabs{
         width: 380px;
-        height: 586px;
+        height: 90vh;
         position: absolute;
         left: -420px;
         background: rgba(20, 20, 20, 0.2);
