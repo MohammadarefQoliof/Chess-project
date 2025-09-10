@@ -106,7 +106,7 @@ h1{
     }
 }
   
-@media screen and (min-width: 370px) and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
     #topList{
         display: none;
     }
@@ -117,12 +117,12 @@ h1{
         margin: 20px;
     }
     .tabs{
-        width: 380px;
-        height: 90vh;
+        width: max-content;
+        height: max-content;
         position: absolute;
         left: -420px;
         background: rgba(20, 20, 20, 0.2);
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(12px);
         display: flex;
         flex-direction: column;
     }
