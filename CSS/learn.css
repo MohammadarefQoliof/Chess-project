@@ -58,6 +58,20 @@ body{
     height: 100px;
     margin-top: 10px;
 }
+.firstPage{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 30px;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+}
 .kingMove{
     background-image: url("../images/kingMoveChess.png");
 }
@@ -183,6 +197,13 @@ body{
     .sec1{
         height: 2500px;
     }
+    .firstPage{
+        font-size: 20px;
+        margin: 50px 0 0 0;
+    }
+    p{
+        width: 80%;
+    }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
     .list > ul > li{
@@ -206,5 +227,12 @@ body{
     }
     .sec1{
         height: 2000px;
+    }
+    .firstPage{
+        font-size: 25px;
+        margin: 25px 0 0 0;
+    }
+    p{
+        width: 90%;
     }
 }
