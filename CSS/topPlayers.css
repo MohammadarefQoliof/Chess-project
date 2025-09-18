@@ -147,7 +147,7 @@ h1{
 }
 
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 700px) {
     body{
         height: 100vh;
     }
@@ -165,7 +165,7 @@ h1{
         height: 45px;
     }
     .cards{
-        height: 700px;
+        height: max-content;
     }
     .card > h1{
         font-size: 30px;
@@ -177,7 +177,7 @@ h1{
         top: auto;
         left: auto;
         bottom: 10px;
-        left: 130px;
+        left: 110px;
     }
     #next{
         width: 75px;
@@ -186,10 +186,10 @@ h1{
         top: auto;
         left: auto;
         bottom: 10px;
-        right: 130px;
+        right: 110px;
     }
 }
-@media screen and (min-width: 726px) and (max-width: 1024px) {
+@media screen and (min-width: 701px) and (max-width: 1024px) {
     body{
         height: 100vh;
     }
