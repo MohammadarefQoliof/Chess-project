@@ -164,9 +164,9 @@ h1{
         width: 90px;
         height: 45px;
     }
-    .cards{
-        height: auto;
-    }
+    /* .cards{
+        height: ;
+    } */
     .card > h1{
         font-size: 30px;
     }
