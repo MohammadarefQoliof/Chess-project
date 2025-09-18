@@ -165,7 +165,7 @@ h1{
         height: 45px;
     }
     .cards{
-        height: max-content;
+        height: auto;
     }
     .card > h1{
         font-size: 30px;
