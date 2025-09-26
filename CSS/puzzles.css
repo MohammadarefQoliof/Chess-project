@@ -13,15 +13,17 @@ h1{
 }
 #main{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/backgroundColorImage.jpg");
 }
 #dailyPuzzle{
     width: 50%;
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -59,7 +61,7 @@ h1{
 }
 #otherPuzzles{
     width: 50%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,9 +141,6 @@ h1{
         font-size: 25px;
         margin: 20px auto;
     }
-
-
-
     #otherPuzzles{
         width: 100%;
         height: 50%;
