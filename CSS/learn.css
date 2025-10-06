@@ -48,7 +48,7 @@ body{
     justify-content: center;
 }
 .chessImages:hover + .explanationText{
-    animation: slide 1s forwards;
+    animation: slide 0.8s forwards;
 }
 @keyframes slide {
     from{
