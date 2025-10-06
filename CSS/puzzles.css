@@ -18,10 +18,6 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../images/backgroundColorImage.jpg");
 }
 #dailyPuzzle{
     width: 50%;
@@ -101,8 +97,7 @@ h1{
 @media screen and (max-width: 1024px) {
     #main{
         width: 100%;
-        height: 100%;
-        height: calc(100vw / 0.4);
+        height: calc(100vw / 0.35);
     }
     #dailyPuzzle{
         width: 100%;
