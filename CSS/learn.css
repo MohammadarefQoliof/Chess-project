@@ -30,13 +30,13 @@ body{
     align-items: center;
 }
 .sec1{
-    height: 1000px;
+    height: 1100px;
 }
 .sec2{
     height: 1150px;
 }
 .sec3{
-    height: 1500px;
+    height: 1700px;
 }
 .chessImages{
     width: 400px;
@@ -62,12 +62,13 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .explanationText{
     width: 400px;
-    height: 100px;
+    height: 40px;
     margin-top: 10px;
+    font-size: 18px;
     opacity: 0;
 }
 .firstPage{
